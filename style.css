@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+
+
+header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+html {
+    height: 100;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family:Verdana,sans-serif;
+    font-size:100%;    
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.reglink {
+    color: white;
+    font: bold 30px/1.5 Helvetica, Verdana, sans-serif; 
+    float: left;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  margin-top: 3.5%;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #00000085;
+    border: 3px solid white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    text-shadow: black 1px 1px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 800px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border:1px solid #ddd;
+}
+
+.categories{
+     width:200px;
+     height:900px;
+     background: #00000085;
+     border: 3px solid white;
+}
+
+.login {
+     float: right;
+     width: 200px;
+     height: 900px;
+     background: #00000085;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     border: 3px solid white;
+     color: white;
+}
+
+.registration {
+      margin-top: 6%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200%;
+      color: white;
+      background: #00000085;
+      border: 3px solid white;
+      text-shadow: black 1px 1px;
+      font-weight: bold;
+}
+
+.categories a {
+      text-decoration: none;
+      font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+      color: white;
+      padding:-20px;
+      padding-right:50px;
+      text-shadow: black 1px 1px;
+}
+
+.categories ul li{
+      list-style-type:none;
+      display:block;
+      margin:10px;
+      padding:15px;
+      color: black;
+}
+
+.categories ul li:hover{
+      background: white;
+      transition: linear all 0.40s;
+      margin-left:20px;
+}
+
+.categories ul li a:hover{
+     color: black;
+}
+
+.selected{
+     background: #2196F3;
+}
+     
+.selected a{
+     color: white;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #2196F3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+* {margin: 0; padding: 0;}
+ 
+.product {
+  background-color: #00000085;
+  margin: 20px;
+  width: 200%;
+  border: 3px solid white;
+}
+ 
+.product ul {
+  list-style-type: none;
+  width: 100%;
+}
+ 
+.product h3 {
+  font: bold 30px/1.5 Helvetica, Verdana, sans-serif;
+  text-shadow: black 1px 1px;
+  color: white;
+}
+ 
+.product li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+.product li p {
+  font: bold 15px/1.5 Helvetica, Verdana, sans-serif;
+  text-shadow: black 1px 1px;
+  color: white;
+}
+ 
+.product li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+.product li:hover {
+  background: #2196F3;
+  cursor: pointer;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.err_msg{
+    bold 15px/1.5 Helvetica, Verdana, sans-serif; 
+    color:red;
+}
+
+.boldstyle {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    color:black;
+}
+
+footer{
+        position: fixed;
+        background-color: #00000085;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+
+/* BootStrap: LittleSnippets.net */
+
+/* Included color classes.. 
+    .red 
+    .blue 
+    .orange
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1171 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 150%;
+  max-width: 300%;
+  width: 100%;
+  background: #000000;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1171 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1171 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1171 figcaption {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 25px 50px;
+}
+figure.snip1171 h3 {
+  position: absolute;
+  bottom: 100%;
+  text-transform: uppercase;
+  padding: 0px 25px;
+  line-height: 44px;
+  margin: 0;
+  left: 0;
+  font-weight: 400;
+  background-color: #000000;
+  color: #ffffff;
+}
+figure.snip1171 h3 span {
+  font-weight: 800;
+}
+figure.snip1171 h3:before {
+  position: absolute;
+  left: 100%;
+  border-style: solid;
+  border-width: 44px 0 0 12px;
+  border-color: transparent transparent transparent #000000;
+  content: '';
+  top: 0;
+}
+figure.snip1171 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+}
+figure.snip1171 .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 10px;
+  line-height: 40px;
+  font-weight: 800;
+}
+figure.snip1171 .price:before {
+  position: absolute;
+  right: 100%;
+  border-style: solid;
+  border-width: 0 12px 40px 0;
+  border-color: transparent #000000 transparent;
+  content: '';
+  top: 0;
+}
+figure.snip1171 a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  line-height: 40px;
+  padding: 0 10px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+figure.snip1171 a:before {
+  position: absolute;
+  right: 100%;
+  border-style: solid;
+  border-width: 0 0 40px 12px;
+  border-color: transparent transparent #000000;
+  content: '';
+  top: 0;
+}
+figure.snip1171.blue {
+  background-color: #2472a4;
+}
+figure.snip1171.blue h3,
+figure.snip1171.blue a,
+figure.snip1171.blue .price {
+  background-color: #2472a4;
+}
+figure.snip1171.blue .price:before {
+  border-color: transparent #2472a4 transparent;
+}
+figure.snip1171.blue h3:before {
+  border-color: transparent transparent transparent #2472a4;
+}
+figure.snip1171.blue a:before {
+  border-color: transparent transparent #2472a4;
+}
+figure.snip1171.red {
+  background-color: #ab3326;
+}
+figure.snip1171.red h3,
+figure.snip1171.red a,
+figure.snip1171.red .price {
+  background-color: #ab3326;
+}
+figure.snip1171.red .price:before {
+  border-color: transparent #ab3326 transparent;
+}
+figure.snip1171.red h3:before {
+  border-color: transparent transparent transparent #ab3326;
+}
+figure.snip1171.red a:before {
+  border-color: transparent transparent #ab3326;
+}
+figure.snip1171.orange {
+  background-color: #d67118;
+}
+figure.snip1171.orange h3,
+figure.snip1171.orange a,
+figure.snip1171.orange .price {
+  background-color: #d67118;
+}
+figure.snip1171.orange .price:before {
+  border-color: transparent #d67118 transparent;
+}
+figure.snip1171.orange h3:before {
+  border-color: transparent transparent transparent #d67118;
+}
+figure.snip1171.orange a:before {
+  border-color: transparent transparent #d67118;
+}
+figure.snip1171:hover img,
+figure.snip1171.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/* BootStrap: http://cssdeck.com */
+/*
+Author: Michiel de Graaf
+Title: Workbench, Shopping cart
+*/
+
+*{
+   margin:0;
+   padding:0;
+}
+
+
+
+img{
+      border:0;
+}
+
+::-moz-selection{
+      color:#fff;
+      background:#00a2ff;
+      text-shadow:0 1px rgba(0,0,0,0.2);
+}
+
+::selection{
+      color:#fff;
+      background:#00a2ff;
+      text-shadow:0 1px rgba(0,0,0,0.2);
+}
+
+header,
+nav,
+section,
+details,
+summary,
+article,
+footer{
+	display:block;
+}
+
+a:hover{
+      text-decoration:none;
+}
+
+/* Content */
+#content{
+   margin:0 auto;
+   padding-bottom:50px;
+   width:280px;
+}
+
+
+.shoppingCart{
+      position:relative;
+      width: 200%;
+      margin-top: 6%;
+      overflow:hidden;
+      color:#495860;
+      color:hsla(201,14%,33%,0.8);
+      -webkit-border-radius:4px 4px 0 0;
+         -moz-border-radius:4px 4px 0 0;
+              border-radius:4px 4px 0 0;
+      -webkit-box-shadow:0 2px 3px 1px rgba(0,0,0,0);
+         -moz-box-shadow:0 2px 3px 1px rgba(0,0,0,0);
+              box-shadow:0 2px 3px 1px rgba(0,0,0,0);
+      -webkit-transition:all 0.4s;
+         -moz-transition:all 0.4s;
+           -o-transition:all 0.4s;
+              transition:all 0.4s;
+}
+
+
+.shoppingCart:hover{
+         color:#495860;
+         -webkit-box-shadow:0 2px 4px 1px rgba(0,0,0,0.1);
+            -moz-box-shadow:0 2px 4px 1px rgba(0,0,0,0.1);
+                 box-shadow:0 2px 4px 1px rgba(0,0,0,0.1);
+}
+
+.shoppingCart summary{
+         padding:12px 16px 14px 16px;
+         overflow:hidden;
+         background:#222;
+         background:-webkit-gradient(linear,left top,left bottom,color-stop(.01, #4ca9e2),color-stop(1, #1d7cb7));
+         background: -webkit-linear-gradient(top,#4ca9e2 1%,#1d7cb7 100%);
+         background: -moz-linear-gradient(top,#4ca9e2 1%,#1d7cb7 100%);
+         background: -o-linear-gradient(top,#4ca9e2 1%,#1d7cb7 100%);
+         background: linear-gradient(top,#4ca9e2 1%,#1d7cb7 100%);
+         -webkit-border-radius:4px 4px 0 0;
+            -moz-border-radius:4px 4px 0 0;
+                 border-radius:4px 4px 0 0;
+         -webkit-box-shadow:inset 0 1px 0 #72b3d3, inset 0 -1px 0 #155f8e;
+            -moz-box-shadow:inset 0 1px 0 #72b3d3, inset 0 -1px 0 #155f8e;
+                 box-shadow:inset 0 1px 0 #72b3d3, inset 0 -1px 0 #155f8e;
+}
+
+
+.shoppingCart h4{
+            float:left;
+            color:#d4f1ff;
+            text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}
+
+.shoppingCart:hover h4{
+               color:#fff;
+}
+
+.arrow{
+            float:right;
+            width:0;
+            height:0;
+            margin-top:7px;
+            border-right:4px solid transparent;
+            border-bottom:4px solid hsla(200,17%,93%,0.5);
+            border-left:4px solid transparent;
+            -webkit-transition:all 0.5s;
+               -moz-transition:all 0.5s;
+                 -o-transition:all 0.5s;
+                    transition:all 0.5s;
+}
+
+.shoppingCart:hover .arrow{
+               border-bottom-color:hsla(200,17%,93%,1);
+               -webkit-transform:rotate(-180deg);
+                  -moz-transform:rotate(-180deg);
+                    -o-transform:rotate(-180deg);
+                       transform:rotate(-180deg);
+}
+
+.shoppingCart ul{
+         list-style:none;
+         position:relative;
+         display:block;
+}
+
+
+.shoppingCart li{
+            padding:0 15px;
+            overflow:hidden;
+            height:0px;
+            background:#fff;
+            -webkit-transition:all 0.3s;
+               -moz-transition:all 0.3s;
+                 -o-transition:all 0.3s;
+                    transition:all 0.3s;
+}
+
+
+.shoppingCart:hover li{
+               height:auto;
+               padding:10px 15px;
+               border-bottom:1px solid rgba(0,0,0,0.1);
+               -webkit-box-shadow:inset 0 1px 0 #fff;
+                  -moz-box-shadow:inset 0 1px 0 #fff;
+                       box-shadow:inset 0 1px 0 #fff;
+}
+
+
+.shoppingCart:hover li:hover{
+               text-shadow:0 -1px #fff;
+               -webkit-box-shadow:inset 0 15px 20px #eee;
+                  -moz-box-shadow:inset 0 15px 20px #eee;
+                       box-shadow:inset 0 15px 20px #eee;
+}
+
+
+.shoppingCart li a{
+               color:#495860;
+               text-decoration:none;
+               border-color:#666;
+               border-bottom:1px dotted rgba(0,0,0,0.6);
+            }
+               .shoppingCart li a:hover{
+                  border:0;
+               }
+            .shoppingCart li span{
+               display:block;
+               float:left;
+            }
+            .shoppingCart li strong{
+               display:block;
+               float:right;
+}
+
+      .shoppingCart p{
+         padding:12px 16px 14px 16px;
+         overflow:hidden;
+         background:#fff;
+         -webkit-transition:background 0.2s;
+            -moz-transition:background 0.2s;
+              -o-transition:background 0.2s;
+                 transition:background 0.2s;
+      }
+         .shoppingCart:hover p{
+            text-shadow:0 -1px #fff;
+            background:#eee;
+         }
+         .shoppingCart p span{
+            display:block;
+         }
+            .shoppingCart p span:first-child{
+               float:left;
+            }
+               .shoppingCart:hover p span:first-child{
+                  display:none;
+               }
+            .shoppingCart p span:last-child{
+               float:right;
+}
+
+.checkout{
+         opacity:0;
+         display:block;
+         position:absolute;
+         color:#fff;
+         text-decoration:none;
+         font-weight:bold;
+         text-shadow:0 1px rgba(0,0,0,0.3);
+         bottom:6px;
+         left:6px;
+         padding:6px 14px 8px 14px;
+         background:#009c58;
+         background:-webkit-gradient(linear,left top,left bottom,color-stop(.2, #00cc73),color-stop(1, #009c58));
+         background: -webkit-linear-gradient(top,#00cc73 20%,#009c58 100%);
+         background: -moz-linear-gradient(top,#00cc73 20%,#009c58 100%);
+         background: -o-linear-gradient(top,#00cc73 20%,#009c58 100%);
+         background: linear-gradient(top,#00cc73 20%,#009c58 100%);
+         -webkit-border-radius:4px;
+            -moz-border-radius:4px;
+                 border-radius:4px;
+         -webkit-box-shadow:inset 0 1px 0 #00e1a2, 0 1px 0 rgba(0,0,0,0.1);
+            -moz-box-shadow:inset 0 1px 0 #00e1a2, 0 1px 0 rgba(0,0,0,0.1);
+                 box-shadow:inset 0 1px 0 #00e1a2, 0 1px 0 rgba(0,0,0,0.1);
+         -webkit-transition:opacity 0.6s;
+            -moz-transition:opacity 0.6s;
+              -o-transition:opacity 0.6s;
+                 transition:opacity 0.6s;
+}
+
+.checkout:hover{
+            background:#00cc73;
+            background:-webkit-gradient(linear,left top,left bottom,color-stop(.1, #00e481),color-stop(1, #009543));
+            background: -webkit-linear-gradient(top,#00e481 10%,#009543 100%);
+            background: -moz-linear-gradient(top,#00e481 10%,#009543 100%);
+            background: -o-linear-gradient(top,#00e481 10%,#009543 100%);
+            background: linear-gradient(top,#00e481 10%,#009543 100%);
+}
+
+.checkout:active{
+            text-shadow:0 -1px rgba(0,0,0,0.3);
+            background:#009c58;
+            background:-webkit-gradient(linear,left top,left bottom, color-stop(.2, #009c58),color-stop(1, #00cc73));
+            background: -webkit-linear-gradient(top,#009c58 20%,#00cc73 100%);
+            background: -moz-linear-gradient(top,#009c58 20%,#00cc73 100%);
+            background: -o-linear-gradient(top,#009c58 20%,#00cc73 100%);
+            background: linear-gradient(top,#009c58 20%,#00cc73 100%);
+            -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.4);
+               -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.4);
+                    box-shadow:inset 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.shoppingCart:hover .checkout{
+            opacity:1;
+}
+
+.modal {
+    display: hidden; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Product Preview */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+

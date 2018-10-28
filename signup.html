@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp Page</title> 
+<!--
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+-->
+<script type="text/javascript" src="validate_signup.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+<h1><img src="penguin.jpg" alt="~Linux Penguin~" style = "display:inline" width = "150" height = "100" />
+Welcome to the Sign Up Page </h1>
+</div>
+<hr />
+<h1>Sign Up Page</h1>
+<form id="SignUp" onsubmit ="return SignUpForm()" method="post">
+<table>
+ 	<tr><td>Email: </td><td> <input type="text" name="email" size="30" /></td></tr>
+ 	<tr><td>Username: </td><td> <input type="text" name="uname" size="30" /></td></tr>
+ 	<tr><td>Password: </td><td> <input type="password" name="pswd" size="30" /></td></tr>      
+ 	<tr><td>Confirm Password: </td><td> <input type="password" name="pswdr" size="30" /></td></tr>             
+</table>
+
+<p><input type="submit" name="SignUp" value="SignUp" />
+<input type="reset" name="Reset" value="Reset" /></p>
+</form>
+<hr />
+
+<p><a href = "index.html">Back to index page</a></p>
+
+</body>
+</html>
